@@ -150,7 +150,7 @@ function __cb_explode($arr) {
 }
 
 function __getCRMIDFromWSID($arr) {
-	if (!empty($arr) && is_array($arr) && !empty($arr[0])) {
+	if (!empty($arr) && !empty($arr[0])) {
 		return explode("x", $arr[0])[1];
 	}
 	return "";
